@@ -1,0 +1,23 @@
+.logo {
+  display: inline-block;
+  width: 145px;
+
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.logo--start {
+  color: $accent-color;
+}
+
+.header .logo--end {
+  color: $logo-end-color;
+}
+
+.footer .logo--end {
+  color: $main-beckground-color;
+}

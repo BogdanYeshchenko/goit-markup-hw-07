@@ -9,14 +9,14 @@
   letter-spacing: 0.03em;
 }
 
-.start-logo {
-  color: var(--logo-start-color);
+.logo--start {
+  color: #2196f3;
 }
 
-header .end-logo {
-  color: var(--logo-end-color);
+.header .logo--end {
+  color: #000000;
 }
 
-footer .end-logo {
-  color: var(--header-beckground-color);
+.footer .logo--end {
+  color: #ffffff;
 }/*# sourceMappingURL=logo.css.map */

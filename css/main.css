@@ -228,17 +228,14 @@ body {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-}
-
-.logo--start {
   color: #2196f3;
 }
 
-.header .logo--end {
+.logo__end--header {
   color: #000000;
 }
 
-.footer .logo--end {
+.logo__end--footer {
   color: #ffffff;
 }
 
@@ -263,24 +260,20 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: #afb1b8;
-  background-color: #ffffff;
-  transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1), fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link__link--light {
   fill: #afb1b8;
   background-color: #ffffff;
 }
 .social-link__link--dark {
-  fill: #afb1b8;
-  background-color: #ffffff;
+  fill: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .social-link__link:hover, .social-link__link:focus {
   background-color: #2196f3;
-  fill: #fff;
-  transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #ffffff;
+  transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1), fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .features .features-meaning {
@@ -320,17 +313,14 @@ body {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-}
-
-.logo--start {
   color: #2196f3;
 }
 
-.header .logo--end {
+.logo__end--header {
   color: #000000;
 }
 
-.footer .logo--end {
+.logo__end--footer {
   color: #ffffff;
 }
 
@@ -582,7 +572,7 @@ header .logo {
 
 .team__box {
   display: flex;
-  gap: 15px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 .team__list {
@@ -619,4 +609,223 @@ header .logo {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.clients {
+  background-color: #ffffff;
+}
+.clients__box {
+  display: flex;
+  width: 1170px;
+  justify-content: space-between;
+}
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 170px;
+  height: 92px;
+  fill: #afb1b8;
+  transition: border 1000ms cubic-bezier(0.4, 0, 0.2, 1), fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients__icon {
+  width: 106px;
+  height: 60px;
+}
+.clients__link:hover, .clients__link:focus {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+  transition: border 1000ms cubic-bezier(0.4, 0, 0.2, 1), fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients {
+  background-color: #ffffff;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 170px;
+  height: 92px;
+  fill: #afb1b8;
+  transition: border 1000ms cubic-bezier(0.4, 0, 0.2, 1), fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-icon {
+  width: 106px;
+  height: 60px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+  transition: border 1000ms cubic-bezier(0.4, 0, 0.2, 1), fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-icon-box {
+  display: flex;
+  width: 1170px;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: #2f303a;
+}
+
+.footer {
+  display: flex;
+  align-items: baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+footer .logo {
+  margin-bottom: 20px;
+}
+
+.address {
+  display: inline-block;
+  text-align: left;
+  list-style-type: none;
+}
+
+.address__link {
+  margin-bottom: 9px;
+  text-decoration: none;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-mail-tel {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address__link:hover,
+.address__link:focus,
+.address__link--mail-tel:hover,
+.address__link--mail-tel:focus {
+  color: #2196f3;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.invite {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  margin-right: 93px;
+}
+
+.invite__titel {
+  min-width: 116px;
+  min-height: 16px;
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 570px;
+}
+
+.subscribe-form label[for=email-subscribe] {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  outline: none;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.email-sub {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 12px;
+}
+
+#email-subscribe {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  background-color: #2f303a;
+  color: #ffffff;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#email-subscribe:focus {
+  border: 1px solid #2196f3;
+  outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#email-subscribe:not(:-moz-placeholder-shown) {
+  border: 1px solid #2196f3;
+  outline: none;
+  -moz-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#email-subscribe:not(:-ms-input-placeholder) {
+  border: 1px solid #2196f3;
+  outline: none;
+  -ms-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#email-subscribe:not(:placeholder-shown) {
+  border: 1px solid #2196f3;
+  outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-button {
+  display: flex;
+  gap: 10px;
+  flex-basis: 200px;
+  padding: 10px 28px;
+  font-family: inherit;
+  border: 0;
+  border-radius: 4px;
+  height: 50px;
+  cursor: pointer;
+  background-color: #2196f3;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 }/*# sourceMappingURL=main.css.map */

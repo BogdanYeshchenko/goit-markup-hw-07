@@ -10,16 +10,13 @@
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-}
-
-.logo--start {
   color: $accent-color;
 }
 
-.header .logo--end {
+.logo__end--header {
   color: $logo-end-color;
 }
 
-.footer .logo--end {
+.logo__end--footer {
   color: $main-beckground-color;
 }

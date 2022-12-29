@@ -398,7 +398,7 @@ header .navi > li:last-child {
 
 /* about */
 
-.box.about-list {
+/* .box.about-list {
   display: inline-flex;
 }
 
@@ -454,7 +454,7 @@ header .navi > li:last-child {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-}
+} */
 
 /* team */
 

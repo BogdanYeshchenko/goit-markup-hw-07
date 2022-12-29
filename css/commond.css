@@ -66,8 +66,6 @@ img {
   padding-top: 94px;
 } */
 
-
-
 /* logo */
 
 /* .logo {
@@ -458,7 +456,7 @@ header .navi > li:last-child {
 
 /* team */
 
-.box.team-list {
+/* .box.team-list {
   display: flex;
   margin: -15px;
   flex-wrap: wrap;
@@ -555,11 +553,11 @@ header .navi > li:last-child {
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /* CLIENTS */
 
-.clients {
+/* .clients {
   background-color: var(--header-beckground-color);
 }
 
@@ -599,7 +597,7 @@ header .navi > li:last-child {
   display: flex;
   width: 1170px;
   justify-content: space-between;
-}
+} */
 
 /* footer */
 
@@ -749,7 +747,6 @@ footer .link {
   margin-bottom: 20px;
 }
 
-
 .email-sub {
   display: flex;
   flex-direction: column;
@@ -770,7 +767,7 @@ footer .link {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-#email-subscribe:focus{
+#email-subscribe:focus {
   border: 1px solid var(--accent-color);
   outline: none;
 
@@ -1089,7 +1086,8 @@ footer .link {
   cursor: pointer;
 }
 
-.btn-exit-modal:hover, .btn-exit-modal:focus{
+.btn-exit-modal:hover,
+.btn-exit-modal:focus {
   fill: var(--accent-color);
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1119,7 +1117,7 @@ footer .link {
   color: var(--text-color);
 }
 
-.form-box{
+.form-box {
   position: relative;
 
   display: flex;
@@ -1135,7 +1133,7 @@ footer .link {
   margin-bottom: 4px;
 }
 
-.form-icon{
+.form-icon {
   position: absolute;
   left: 12px;
   top: 27px;
@@ -1143,7 +1141,6 @@ footer .link {
   fill: var(--titel-text-color);
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .modal-input {
@@ -1169,13 +1166,14 @@ footer .link {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:focus + .form-icon{
+.modal-input:focus + .form-icon {
   fill: var(--accent-color);
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:focus, #comment:focus {
+.modal-input:focus,
+#comment:focus {
   border: 1px solid var(--accent-color);
   outline: none;
 
@@ -1186,7 +1184,7 @@ footer .link {
   margin-bottom: 10px;
 }
 
-.form-box.comment{
+.form-box.comment {
   margin-bottom: 20px;
 }
 
@@ -1231,9 +1229,8 @@ footer .link {
   background-repeat: no-repeat;
 }
 
-.checkbox-agree:checked + .agree-icon{
+.checkbox-agree:checked + .agree-icon {
   background-image: url(../images/icon-check.svg);
-
 }
 
 .checkbox-agree {

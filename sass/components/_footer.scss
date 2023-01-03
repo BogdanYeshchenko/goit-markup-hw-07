@@ -5,24 +5,26 @@ footer {
 .footer {
   display: flex;
   align-items: baseline;
+  gap: 93px;
 
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-footer .logo {
-  margin-bottom: 20px;
+.logo-address {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .address {
-  display: inline-block;
-  text-align: left;
-
-  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9px;
 }
 
 .address__link {
-  margin-bottom: 9px;
   text-decoration: none;
 
   color: $main-beckground-color;
@@ -32,37 +34,19 @@ footer .logo {
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  transition: color $trans-attribute;
 
-.footer-mail-tel {
-  text-decoration: none;
-
-  color: $addres-text-color;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address__link:hover,
-.address__link:focus,
-.address__link--mail-tel:hover,
-.address__link--mail-tel:focus {
-  color: $accent-color;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    transition: color $trans-attribute;
+  }
 }
 
 .invite {
   display: flex;
   align-items: start;
   flex-direction: column;
-
-  margin-right: 93px;
 }
 
 .invite__titel {
@@ -121,21 +105,20 @@ footer .logo {
   background-color: $hero-footer-beckground-color;
   color: $main-beckground-color;
 
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  transition: border $trans-attribute;
+  &:focus {
+    border: 1px solid $accent-color;
+    outline: none;
 
-#email-subscribe:focus {
-  border: 1px solid $accent-color;
-  outline: none;
+    transition: border $trans-attribute;
+  }
 
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &:not(:placeholder-shown) {
+    border: 1px solid $accent-color;
+    outline: none;
 
-#email-subscribe:not(:placeholder-shown) {
-  border: 1px solid $accent-color;
-  outline: none;
-
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border $trans-attribute;
+  }
 }
 
 .footer-button {

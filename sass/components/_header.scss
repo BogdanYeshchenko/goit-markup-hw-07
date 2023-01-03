@@ -1,7 +1,7 @@
 @import "../utils/utils";
 @import "../components/logo.scss";
 
-.box-header {
+.header {
   display: flex;
   align-items: center;
 
@@ -21,10 +21,10 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
   border-bottom: 1px solid #ececec;
+}
 
-  .logo {
-    margin-right: 93px;
-  }
+.logo {
+  margin-right: 93px;
 }
 
 .navi {
@@ -34,7 +34,7 @@ header {
   gap: 50px;
 }
 
-.navi-link {
+.navi__link {
   position: relative;
 
   padding-top: 20px;
@@ -42,20 +42,19 @@ header {
   text-decoration: none;
   color: $titel-text-color;
   filter: none;
-  @include allTransition(filter);
-  @include allTransition(color);
+
+  transition: filter $trans-attribute, color $trans-attribute;
 
   &:hover,
   &:focus,
-  &.active {
+  &.navi__link--active {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     color: $accent-color;
 
-    @include allTransition(filter);
-    @include allTransition(color);
+    transition: filter $trans-attribute, color $trans-attribute;
   }
 
-  &.active::before {
+  &.navi__link--active::before {
     position: absolute;
 
     display: inline-block;
@@ -72,41 +71,41 @@ header {
   }
 }
 
-.contacts-header {
+.contacts {
   display: flex;
   margin-left: auto;
   gap: 50px;
 }
 
-.header-icons {
+.contacts__icons {
   fill: currentColor;
   margin-right: 10px;
 
   color: $text-color;
 
-  @include allTransition(fill);
+  transition: fill $trans-attribute;
+
+  .contacts__link:hover &,
+  .contacts__link:focus & {
+    fill: $accent-color;
+
+    transition: fill $trans-attribute;
+  }
 }
 
-.contacts-link {
+.contacts__link {
   display: flex;
   align-items: center;
 
   color: $text-color;
   text-decoration: none;
 
-  @include allTransition(color);
+  transition: color $trans-attribute;
 
   &:hover,
   &:focus {
     color: $accent-color;
 
-    @include allTransition(color);
-  }
-
-  &:hover .header-icons,
-  &:focus .header-icons {
-    fill: $accent-color;
-
-    @include allTransition(fill);
+    transition: color $trans-attribute;
   }
 }

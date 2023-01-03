@@ -1,50 +1,51 @@
 .social-link {
-  &__box {
-    list-style-type: none;
+}
 
-    display: flex;
-    width: 206px;
-    height: 44px;
-    justify-content: space-between;
-    align-items: center;
+.social-link__box {
+  list-style-type: none;
 
-    margin-left: auto;
-    margin-right: auto;
-  }
+  display: flex;
+  width: 206px;
+  height: 44px;
+  justify-content: space-between;
+  align-items: center;
 
-  &__icons {
-    width: 20px;
-    height: 20px;
-  }
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  &__link {
-    display: flex;
+.social-link__icons {
+  width: 20px;
+  height: 20px;
+}
 
-    justify-content: center;
-    align-items: center;
+.social-link__link {
+  display: flex;
 
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+  justify-content: center;
+  align-items: center;
 
-    transition: background-color $trans-attribute, fill $trans-attribute;
-  }
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 
-  &__link--light {
-    fill: #afb1b8;
-    background-color: $main-beckground-color;
-  }
+  transition: background-color $trans-attribute, fill $trans-attribute;
 
-  &__link--dark {
-    fill: $main-beckground-color;
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-
-  &__link:hover,
-  &__link:focus {
+  &:hover,
+  &:focus {
     background-color: $accent-color;
     fill: $main-beckground-color;
 
     transition: background-color $trans-attribute, fill $trans-attribute;
   }
+}
+
+.social-link__link--light {
+  fill: #afb1b8;
+  background-color: $main-beckground-color;
+}
+
+.social-link__link--dark {
+  fill: $main-beckground-color;
+  background-color: rgba(255, 255, 255, 0.1);
 }

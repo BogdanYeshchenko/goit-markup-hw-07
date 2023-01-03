@@ -262,12 +262,12 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1), fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link__link:hover, .social-link__link:focus {
   background-color: #2196f3;
   fill: #ffffff;
-  transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1), fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link__link--light {
@@ -365,12 +365,12 @@ header {
   text-decoration: none;
   color: #212121;
   filter: none;
-  transition: filter 1000ms cubic-bezier(0.4, 0, 0.2, 1), color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navi__link:hover, .navi__link:focus, .navi__link.navi__link--active {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   color: #2196f3;
-  transition: filter 1000ms cubic-bezier(0.4, 0, 0.2, 1), color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navi__link.navi__link--active::before {
   position: absolute;
@@ -394,11 +394,11 @@ header {
   fill: currentColor;
   margin-right: 10px;
   color: #757575;
-  transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts__link:hover .contacts__icons, .contacts__link:focus .contacts__icons {
   fill: #2196f3;
-  transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts__link {
@@ -406,11 +406,11 @@ header {
   align-items: center;
   color: #757575;
   text-decoration: none;
-  transition: color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
-  transition: color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visually-hidden, .checkbox-agree, .features .features-meaning {
@@ -632,7 +632,7 @@ header {
   width: 170px;
   height: 92px;
   fill: #afb1b8;
-  transition: border 1000ms cubic-bezier(0.4, 0, 0.2, 1), fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__icon {
   width: 106px;
@@ -641,7 +641,7 @@ header {
 .clients__link:hover, .clients__link:focus {
   fill: #2196f3;
   border: 1px solid #2196f3;
-  transition: border 1000ms cubic-bezier(0.4, 0, 0.2, 1), fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 footer {
@@ -677,11 +677,11 @@ footer {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  transition: color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address__link:hover, .address__link:focus {
   color: #2196f3;
-  transition: color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .invite {
@@ -738,29 +738,29 @@ footer {
   padding: 15px 16px;
   background-color: #2f303a;
   color: #ffffff;
-  transition: border 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 #email-subscribe:focus {
   border: 1px solid #2196f3;
   outline: none;
-  transition: border 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 #email-subscribe:not(:-moz-placeholder-shown) {
   border: 1px solid #2196f3;
   outline: none;
-  -moz-transition: border 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 #email-subscribe:not(:-ms-input-placeholder) {
   border: 1px solid #2196f3;
   outline: none;
-  -ms-transition: border 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  -ms-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 #email-subscribe:not(:placeholder-shown) {
   border: 1px solid #2196f3;
   outline: none;
-  transition: border 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-button {
@@ -790,13 +790,13 @@ footer {
   height: 100%;
   opacity: 1;
   background: rgba(0, 0, 0, 0.2);
-  transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -831,14 +831,14 @@ footer {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   fill: #000000;
-  transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 
 .btn-exit-modal:hover,
 .btn-exit-modal:focus {
   fill: #2196f3;
-  transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form {
@@ -883,64 +883,64 @@ footer {
   left: 12px;
   top: 27px;
   fill: #212121;
-  transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input {
   padding: 10px 12px 10px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: border 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:not(:-moz-placeholder-shown), #comment:not(:-moz-placeholder-shown) {
   border: 1px solid #2196f3;
   outline: none;
-  -moz-transition: border 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:not(:-ms-input-placeholder), #comment:not(:-ms-input-placeholder) {
   border: 1px solid #2196f3;
   outline: none;
-  -ms-transition: border 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  -ms-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:not(:placeholder-shown),
 #comment:not(:placeholder-shown) {
   border: 1px solid #2196f3;
   outline: none;
-  transition: border 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:not(:-moz-placeholder-shown) + .form-icon {
   fill: #2196f3;
-  -moz-transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:not(:-ms-input-placeholder) + .form-icon {
   fill: #2196f3;
-  -ms-transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  -ms-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:not(:placeholder-shown) + .form-icon {
   fill: #2196f3;
-  transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus + .form-icon {
   fill: #2196f3;
-  transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus,
 #comment:focus {
   border: 1px solid #2196f3;
   outline: none;
-  transition: border 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-box {
@@ -1060,12 +1060,12 @@ footer {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1), color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .working .filters:hover, .working .filters:focus {
   background-color: #2196f3;
   color: #ffffff;
-  transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1), color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .working-titel {
@@ -1098,11 +1098,11 @@ footer {
 .portfolio-link {
   display: block;
   box-shadow: none;
-  transition: box-shadow 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-link:hover, .portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: box-shadow 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .person {
@@ -1130,12 +1130,12 @@ footer {
   background: rgba(33, 150, 243, 0.9);
   opacity: 0;
   transform: translateY(100%);
-  transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1), transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-link:hover .working-trump-box, .portfolio-link:focus .working-trump-box {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1), transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .working-trump-text {

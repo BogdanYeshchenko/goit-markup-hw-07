@@ -1,22 +1,17 @@
-@import "../utils/utils";
-
-.section.features {
-  padding-bottom: 0;
-}
-
-.features .features {
+.features {
   background-color: $main-beckground-color;
+  padding-bottom: 0;
 
   &-list.box {
     display: flex;
     gap: 30px;
   }
 
-  &-titel {
+  &-title {
     text-align: left;
 
     margin-bottom: 10px;
-    color: $titel-text-color;
+    color: $title-text-color;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;

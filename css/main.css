@@ -142,6 +142,20 @@ summary {
   display: list-item;
 }
 
+.visually-hidden, .checkbox-agree, .features-meaning {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -191,21 +205,17 @@ body {
   padding-top: 94px;
 }
 
-.visually-hidden, .checkbox-agree, .features .features-meaning {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.section__title {
+  margin-bottom: 50px;
+  color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
-.visually-hidden, .checkbox-agree, .features .features-meaning {
+.visually-hidden, .checkbox-agree, .features-meaning {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -280,7 +290,7 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.visually-hidden, .checkbox-agree, .features .features-meaning {
+.visually-hidden, .checkbox-agree, .features-meaning {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -294,7 +304,7 @@ body {
   overflow: hidden;
 }
 
-.visually-hidden, .checkbox-agree, .features .features-meaning {
+.visually-hidden, .checkbox-agree, .features-meaning {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -352,13 +362,13 @@ header {
   margin-right: 93px;
 }
 
-.navi {
+.nav {
   display: flex;
   list-style-type: none;
   gap: 50px;
 }
 
-.navi__link {
+.nav__link {
   position: relative;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -367,12 +377,12 @@ header {
   filter: none;
   transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navi__link:hover, .navi__link:focus, .navi__link.navi__link--active {
+.nav__link:hover, .nav__link:focus, .nav__link.nav__link--active {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   color: #2196f3;
   transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navi__link.navi__link--active::before {
+.nav__link.nav__link--active::before {
   position: absolute;
   display: inline-block;
   content: "";
@@ -413,7 +423,7 @@ header {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.visually-hidden, .checkbox-agree, .features .features-meaning {
+.visually-hidden, .checkbox-agree, .features-meaning {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -432,6 +442,8 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
   height: 600px;
   max-width: 1600px;
   margin-left: auto;
@@ -440,8 +452,7 @@ header {
 }
 
 .hero.section {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 0;
 }
 
 .hero h1 {
@@ -473,32 +484,15 @@ header {
   letter-spacing: 0.06em;
 }
 
-.visually-hidden, .checkbox-agree, .features .features-meaning {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.section.features {
+.features {
+  background-color: #ffffff;
   padding-bottom: 0;
 }
-
-.features .features {
-  background-color: #ffffff;
-}
-.features .features-list.box {
+.features-list.box {
   display: flex;
   gap: 30px;
 }
-.features .features-titel {
+.features-title {
   text-align: left;
   margin-bottom: 10px;
   color: #212121;
@@ -508,7 +502,7 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.features .features-icon {
+.features-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -518,7 +512,7 @@ header {
   background: #f5f4fa;
   border-radius: 4px;
 }
-.features .features-text {
+.features-text {
   text-align: left;
   color: #757575;
   font-weight: 400;
@@ -559,15 +553,6 @@ header {
   text-transform: uppercase;
   color: #ffffff;
 }
-.about-titel {
-  margin-bottom: 50px;
-  color: #212121;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
 
 .team.section {
   background-color: #f5f4fa;
@@ -602,16 +587,6 @@ header {
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
-}
-
-.team-clients__titel {
-  margin-bottom: 50px;
-  color: #212121;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .clients {
@@ -690,7 +665,7 @@ footer {
   flex-direction: column;
 }
 
-.invite__titel {
+.invite__title {
   min-width: 116px;
   min-height: 16px;
   margin-bottom: 20px;
@@ -1068,7 +1043,7 @@ footer {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.working-titel {
+.working-title {
   -moz-text-align-last: left;
        text-align-last: left;
   margin-bottom: 4px;
